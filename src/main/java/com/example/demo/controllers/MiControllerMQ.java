@@ -18,6 +18,7 @@ public class MiControllerMQ {
 	
 	@PostMapping("/sendMessage")
 	public void sendMessage(@RequestBody MessageDTO message) {
+		System.out.println("Iniciando.............");
 		isendMessage.sendMessageMQ(message);
 	}
 	
